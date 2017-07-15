@@ -29,6 +29,12 @@ body {
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate; }
+    body div a {
+      text-decoration: none;
+      color: white; }
+    body div a:hover {
+      text-decoration: blink;
+      color: white; }
   body div.welcome {
     padding: 45px;
     text-align: center;
