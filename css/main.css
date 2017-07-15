@@ -76,20 +76,6 @@ body {
       margin-right: auto;
       width: 300px;
       margin-top: 45px; }
-  body div.footer {
-    background-color: #175175;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 25px; }
-  body .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center; }
-  body a, body a:hover {
-    text-decoration: none;
-    color: white; }
   body div.resume {
     padding: 45px; }
     body div.resume h1 {
@@ -138,4 +124,4 @@ body {
   i.fa {
     display: none; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
