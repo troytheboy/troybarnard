@@ -16,17 +16,18 @@ body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 20px;
   height: 100%;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+  animation-name: bg;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: black;
+  color: white;
   div {
     font-size: 24px;
-    background: black;
-    color: white;
     //height: 100%;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    animation-name: bg;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
     a {
       text-decoration: none;
       color: white;
@@ -46,6 +47,7 @@ body {
       overflow: hidden;
       line-height: 0.75;
       color: whitesmoke;
+      letter-spacing: 5px;
     }
     h1:hover {
       color: white;
@@ -85,7 +87,7 @@ body {
     img {
       margin-top: 105px;
       max-width: 300px;
-      border-radius: 5px;
+      border-radius: 1px;
       filter: grayscale(100%);
     }
     div.links {
@@ -93,30 +95,43 @@ body {
       margin-right: auto;
       width: 300px;
       margin-top: 45px;
+      letter-spacing: 5px;
     }
   }
   div.resume {
-    padding: 45px;
+    padding-top: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
     h1 {
-      text-align: center;
+      text-align: left;
       font-size: 65px;
-      hr {
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      letter-spacing: 5px;
+    }
+    hr {
+      max-width: 250px;
+      margin: 0;
     }
     div.skills {
-      margin-top: 25px;
+      margin-top: 65px;
       text-align: left;
       width: 550px;
       margin-left: auto;
       margin-right: auto;
       h2 {
+        margin-top: 45px;
         font-size: 32px;
+        letter-spacing: 5px;
+      }
+      h3 {
+        letter-spacing: 5px;
+        margin-left: 25px;
       }
       ul {
         font-size: 18px;
+        margin-left: 35px;
+        ul {
+          margin: auto;
+        }
       }
     }
   }
@@ -126,6 +141,7 @@ body {
     h1 {
       text-align: center;
       margin-bottom: 45px;
+      letter-spacing: 5px;
       hr {
         width: 250px;
         margin-left: auto;
@@ -134,7 +150,7 @@ body {
     }
     img {
       max-width: 300px;
-      border-radius: 5px;
+      border-radius: 1px;
       filter: grayscale(100%);
       display: block;
       margin: 0 auto;
@@ -147,6 +163,9 @@ body {
       margin-right: auto;
       p {
         font-size: 24px;
+        a {
+          text-decoration: underline;
+        }
       }
     }
   }

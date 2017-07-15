@@ -16,19 +16,19 @@ html {
 body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 20px;
-  height: 100%; }
+  height: 100%;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 30s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: bg;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: black;
+  color: white; }
   body div {
-    font-size: 24px;
-    background: black;
-    color: white;
-    -webkit-animation-name: example;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s;
-    /* Safari 4.0 - 8.0 */
-    animation-name: bg;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
+    font-size: 24px; }
     body div a {
       text-decoration: none;
       color: white; }
@@ -44,7 +44,8 @@ body {
       text-transform: uppercase;
       overflow: hidden;
       line-height: 0.75;
-      color: whitesmoke; }
+      color: whitesmoke;
+      letter-spacing: 5px; }
     body div.welcome h1:hover {
       color: white; }
     body div.welcome h1::after {
@@ -75,45 +76,57 @@ body {
     body div.welcome img {
       margin-top: 105px;
       max-width: 300px;
-      border-radius: 5px;
+      border-radius: 1px;
       filter: grayscale(100%); }
     body div.welcome div.links {
       margin-left: auto;
       margin-right: auto;
       width: 300px;
-      margin-top: 45px; }
+      margin-top: 45px;
+      letter-spacing: 5px; }
   body div.resume {
-    padding: 45px; }
+    padding-top: 25px;
+    padding-left: 55px;
+    padding-right: 55px; }
     body div.resume h1 {
-      text-align: center;
-      font-size: 65px; }
-      body div.resume h1 hr {
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto; }
+      text-align: left;
+      font-size: 65px;
+      letter-spacing: 5px; }
+    body div.resume hr {
+      max-width: 250px;
+      margin: 0; }
     body div.resume div.skills {
-      margin-top: 25px;
+      margin-top: 65px;
       text-align: left;
       width: 550px;
       margin-left: auto;
       margin-right: auto; }
       body div.resume div.skills h2 {
-        font-size: 32px; }
+        margin-top: 45px;
+        font-size: 32px;
+        letter-spacing: 5px; }
+      body div.resume div.skills h3 {
+        letter-spacing: 5px;
+        margin-left: 25px; }
       body div.resume div.skills ul {
-        font-size: 18px; }
+        font-size: 18px;
+        margin-left: 35px; }
+        body div.resume div.skills ul ul {
+          margin: auto; }
   body div.bio {
     height: 100%;
     padding: 45px; }
     body div.bio h1 {
       text-align: center;
-      margin-bottom: 45px; }
+      margin-bottom: 45px;
+      letter-spacing: 5px; }
       body div.bio h1 hr {
         width: 250px;
         margin-left: auto;
         margin-right: auto; }
     body div.bio img {
       max-width: 300px;
-      border-radius: 5px;
+      border-radius: 1px;
       filter: grayscale(100%);
       display: block;
       margin: 0 auto; }
@@ -125,6 +138,8 @@ body {
       margin-right: auto; }
       body div.bio div.bio-text p {
         font-size: 24px; }
+        body div.bio div.bio-text p a {
+          text-decoration: underline; }
 
 @media (max-width: 500px) {
   i.fa {
