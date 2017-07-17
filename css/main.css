@@ -43,7 +43,6 @@ body {
       font-size: 65px;
       text-transform: uppercase;
       overflow: hidden;
-      line-height: 0.75;
       color: whitesmoke;
       letter-spacing: 5px; }
     body div.welcome h1:hover {
