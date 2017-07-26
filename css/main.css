@@ -35,13 +35,19 @@ body {
     body div a:hover {
       text-decoration: blink;
       color: white; }
+  body img.logo {
+    width: 50px;
+    margin-bottom: 0; }
+  body span.title {
+    margin-left: 10px;
+    letter-spacing: 3px;
+    height: 50px; }
   body div.welcome {
-    padding: 45px;
-    text-align: center;
-    height: 100%; }
+    padding: 0 45px;
+    text-align: center; }
     body div.welcome h1 {
       font-size: 65px;
-      text-transform: uppercase;
+      text-transform: lowercase;
       overflow: hidden;
       color: whitesmoke;
       letter-spacing: 5px; }
@@ -83,14 +89,17 @@ body {
       width: 300px;
       margin-top: 45px;
       letter-spacing: 5px; }
+      body div.welcome div.links a {
+        text-transform: lowercase; }
   body div.resume {
-    padding-top: 25px;
+    margin-top: -65px;
     padding-left: 55px;
     padding-right: 55px; }
     body div.resume h1 {
-      text-align: left;
-      font-size: 65px;
-      letter-spacing: 5px; }
+      font-size: 45px;
+      letter-spacing: 5px;
+      text-decoration: underline;
+      text-align: center; }
     body div.resume hr {
       max-width: 250px;
       margin: 0; }

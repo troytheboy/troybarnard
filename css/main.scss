@@ -35,13 +35,23 @@ body {
       color: white;
     }
   }
+  img.logo {
+    width: 50px;
+    margin-bottom: 0;
+
+  }
+  span.title {
+    margin-left: 10px;
+    letter-spacing: 3px;
+    //padding-top: 15px;
+    height: 50px;
+  }
   div.welcome {
-    padding: 45px;
+    padding: 0 45px;
     text-align: center;
-    height: 100%;
     h1 {
       font-size: 65px;
-      text-transform: uppercase;
+      text-transform: lowercase;
       overflow: hidden;
       color: whitesmoke;
       letter-spacing: 5px;
@@ -93,16 +103,20 @@ body {
       width: 300px;
       margin-top: 45px;
       letter-spacing: 5px;
+      a {
+        text-transform: lowercase;
+      }
     }
   }
   div.resume {
-    padding-top: 25px;
+    margin-top: -65px;
     padding-left: 55px;
     padding-right: 55px;
     h1 {
-      text-align: left;
-      font-size: 65px;
+      font-size: 45px;
       letter-spacing: 5px;
+      text-decoration: underline;
+      text-align: center;
     }
     hr {
       max-width: 250px;
