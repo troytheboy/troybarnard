@@ -112,6 +112,7 @@ body {
     margin-top: -65px;
     padding-left: 55px;
     padding-right: 55px;
+    text-transform: lowercase;
     h1 {
       font-size: 45px;
       letter-spacing: 5px;
@@ -147,7 +148,6 @@ body {
     }
   }
   div.bio {
-    height: 100%;
     padding: 45px;
     h1 {
       text-align: center;
@@ -172,6 +172,7 @@ body {
       width: 350px;
       margin-left: auto;
       margin-right: auto;
+      text-transform: lowercase;
       p {
         font-size: 24px;
         a {
