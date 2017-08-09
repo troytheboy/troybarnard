@@ -1,31 +1,11 @@
-html {
-  height: 100%;
-}
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes bg {
-  from {background-color: black;}
-  to {background-color: grey;}
-}
-
-/* Standard syntax */
-@keyframes bg {
-  from {background-color: black;}
-  to {background-color: grey;}
-}
 body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 20px;
-  height: 100%;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-  animation-name: bg;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   background: black;
   color: white;
   div {
     font-size: 24px;
+
     a {
       text-decoration: none;
       color: white;
@@ -55,41 +35,6 @@ body {
       overflow: hidden;
       color: whitesmoke;
       letter-spacing: 5px;
-    }
-    h1:hover {
-      color: white;
-    }
-
-    h1::after {
-      content: '';
-      position: absolute;
-      height: 16px;
-      width: 100%;
-      top: 50%;
-      margin-top: -8px;
-      right: 0;
-      background: #F9F9F9;
-      transform: translate3d(-100%,0,0);
-      transition: transform 0.4s;
-      transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    }
-
-    h1:hover::after {
-      transform: translate3d(100%,0,0);
-    }
-
-    h1::before {
-      content: attr(data-letters);
-      position: absolute;
-      z-index: 2;
-      overflow: hidden;
-      color: #424242;
-      white-space: nowrap;
-      width: 0%;
-      transition: width 0.4s 0.3s;
-    }
-    h1:hover::before {
-      width: 100%;
     }
     img {
       margin-top: 105px;
@@ -183,9 +128,42 @@ body {
   }
 }
 @media (max-width: 500px) {
-  i.fa {
-    display: none;
+  body {
+    width: 100%;
+    .hidden-mobile {
+      display: none;
+    }
+    background-color: grey;
+    div.welcome {
+      margin: 0;
+      padding: 0;
+      h1 {
+        margin-top: 50px;
+        font-size: 35px;
+        letter-spacing: normal;
+      }
+      img {
+        margin-top: 35px;
+        max-width: 250px;
+      }
+      div.links {
+        letter-spacing: normal;
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+    div.resume {
+      div.skills {
+        width: 300px;
+        h2 {
+          letter-spacing: normal;
+        }
+      }
+    }
+    div.bio {
+      padding: 0;
+      margin-top: 10px;
+    }
   }
 }
-
-
