@@ -1,18 +1,17 @@
 body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 20px;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   div {
     font-size: 24px;
-
     a {
       text-decoration: none;
-      color: white;
+      color: black;
     }
     a:hover {
       text-decoration: blink;
-      color: white;
+      color: black;
     }
   }
   img.logo {
@@ -23,73 +22,44 @@ body {
   span.title {
     margin-left: 10px;
     letter-spacing: 3px;
-    //padding-top: 15px;
     height: 50px;
   }
   div.welcome {
     padding: 0 45px;
     text-align: center;
+    margin-top: 150px;
     h1 {
       font-size: 65px;
-      text-transform: lowercase;
-      overflow: hidden;
-      color: whitesmoke;
+      color: black;
       letter-spacing: 5px;
     }
     img {
-      margin-top: 105px;
       max-width: 300px;
-      border-radius: 1px;
+      border-radius: 5px;
       filter: grayscale(100%);
     }
     div.links {
       margin-left: auto;
       margin-right: auto;
-      width: 300px;
+      width: 800px;
       margin-top: 45px;
       letter-spacing: 5px;
+      i {
+        font-size: 45px;
+      }
       a {
         text-transform: lowercase;
       }
     }
   }
   div.resume {
-    margin-top: -65px;
-    padding-left: 55px;
-    padding-right: 55px;
-    text-transform: lowercase;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    display: none;
     h1 {
-      font-size: 45px;
-      letter-spacing: 5px;
-      text-decoration: underline;
       text-align: center;
-    }
-    hr {
-      max-width: 250px;
-      margin: 0;
-    }
-    div.skills {
-      margin-top: 65px;
-      text-align: left;
-      width: 550px;
-      margin-left: auto;
-      margin-right: auto;
-      h2 {
-        margin-top: 45px;
-        font-size: 32px;
-        letter-spacing: 5px;
-      }
-      h3 {
-        letter-spacing: 5px;
-        margin-left: 25px;
-      }
-      ul {
-        font-size: 18px;
-        margin-left: 35px;
-        ul {
-          margin: auto;
-        }
-      }
     }
   }
   div.bio {

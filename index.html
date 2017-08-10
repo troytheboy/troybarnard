@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="TroyApp">
     <head>
         <meta charset="UTF-8">
         <title>Troy Barnard</title>
+        <link rel="icon" type="image/png" href="static/img/tb_icon.png">
         <!--bootstrap-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--css-->
         <link rel="stylesheet" href="css/main.min.css"/>
-        <link rel="icon" type="image/png" href="static/img/tb_icon.png">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script src="https://use.fontawesome.com/4afb58094e.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <!--jQuery-->
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
     </head>
-    <body>
-        <a href="/" class="hidden-mobile"><img src="static/img/tb_icon.png" class="logo"></a>
+    <body ng-controller="TroyCtrl">
+        <a class="hidden-mobile"><img src="static/img/tb_icon.png" class="logo"></a>
         <div class="welcome">
+          <img class="animated zoomInDown" src="static/img/troy_headshot.jpg">
             <h1 class="text animated bounceInDown">Troy Barnard</h1>
-            <img onclick="console.log('hello')" ng-click="console.log('click')" src="static/img/troy_flag.jpg" />
-            <div class="links row container text">
-                <div class="col-md-6 col-sm-6 col-xs-6"><a class="shake" ng-class="{animated: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" href="/resume.html">Resume</a></div>
-                <div class="col-md-6 col-sm-6 col-xs-6"><a href="/bio.html">Bio</a></div>
+            <div class="container row links">
+              <div onclick="show('resume_info')" onmouseover="shake('resume_icon')" class="col-md-4" id="resume_icon">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <p>Resume</p>
+              </div>
+              <div onmouseover="shake('contact_icon')" class="col-md-4" id="contact_icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>Contact</p>
+              </div>
+              <div onmouseover="shake('about_icon')" class="col-md-4" id="about_icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>About</p>
+              </div>
             </div>
+        </div>
+        <div class="resume" id="resume_info">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <h1>Resume</h1>
         </div>
     </body>
 </html>
