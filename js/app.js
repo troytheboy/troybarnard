@@ -8,5 +8,9 @@ function shake(s) {
 
 function show(s) {
   console.log(s);
+  $('.info_section').hide();
   $('#'+s).show();
+  $('html,body').animate({
+        scrollTop: $("#"+s).offset().top},
+        'slow');
 }
