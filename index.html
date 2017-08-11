@@ -20,15 +20,15 @@
           <img class="animated zoomInDown" src="static/img/troy_headshot.JPG">
             <h1 class="text animated bounceInDown">Troy Barnard</h1>
             <div class="container row links">
-              <div onclick="show('about')" onmouseover="shake('about_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="about_icon">
+              <div onclick="show('about')" onmouseover="pixar('about_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="about_icon">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <p>About</p>
               </div>
-              <div onclick="show('resume')" onmouseover="shake('resume_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="resume_icon">
+              <div onclick="show('resume')" onmouseover="pixar('resume_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="resume_icon">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                 <p>Resume</p>
               </div>
-              <div onclick="show('contact')" onmouseover="shake('contact_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contact_icon">
+              <div onclick="show('contact')" onmouseover="pixar('contact_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contact_icon">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <p>Contact</p>
               </div>
@@ -39,7 +39,7 @@
           <h1 id="about_title">About Me</h1>
             <p>Hi I'm Troy, A recent graduate of the University of Washington Seattle's Information School.
             As a web developer I've re-designed and managed a startup's website, developed a search engine, and participated in many other
-                projects you can find on my <a href="https://github.com/troytheboy">github</a>.</p>
+                projects you can find on my <a href="https://github.com/troytheboy" target="_blank"><em>github</em></a>.</p>
         </div>
         <div class="info_section" id="resume_info">
           <h1 id="resume_title">Resume</h1>
@@ -83,9 +83,9 @@
         <div class="info_section" id="contact_info">
           <h1 id="contact_title">Contact Me</h1>
           <div class="links">
-            <a href="mailto:troy.w.barnard@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> e-mail</a>
-            <a href="https://www.linkedin.com/in/troy-barnard-7447a110b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linked in</a>
-            <a href="https://github.com/troytheboy"><i class="fa fa-github-square" aria-hidden="true"></i> github</a>
+            <span><a onmouseover="pixar('email', 'shake')" href="mailto:troy.w.barnard@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i> e-mail</a></span>
+            <a onmouseover="pixar('linkedin', 'shake')" href="https://www.linkedin.com/in/troy-barnard-7447a110b/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i> Linked in</a>
+            <a onmouseover="pixar('github', 'shake')" href="https://github.com/troytheboy" target="_blank"><i id="github" class="fa fa-github-square" aria-hidden="true"></i> github</a>
           </div>
         </div>
     </body>
