@@ -27,7 +27,8 @@ body {
   div.welcome {
     padding: 0 45px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     h1 {
       font-size: 65px;
       color: black;
@@ -51,15 +52,32 @@ body {
         text-transform: lowercase;
       }
     }
+    i.fa-caret-down {
+      font-size: 45px;
+      margin-top: 85px;
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
   }
   div.info_section {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
-    display: none;
+    //display: none;
     h1 {
       text-align: center;
+    }
+    div.links {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      a {
+        margin: 10px;
+      }
     }
   }
   div.bio {
