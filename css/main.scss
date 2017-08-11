@@ -10,25 +10,19 @@ body {
       color: black;
     }
     a:hover {
-      text-decoration: blink;
+      text-decoration: none;
       color: black;
     }
   }
   img.logo {
     width: 50px;
     margin-bottom: 0;
-
-  }
-  span.title {
-    margin-left: 10px;
-    letter-spacing: 3px;
-    height: 50px;
   }
   div.welcome {
     padding: 0 45px;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     h1 {
       font-size: 65px;
       color: black;
@@ -115,15 +109,56 @@ body {
     }
   }
 }
+@media (max-width: 768px) {
+  body {
+    div {
+    font-size: 16px;
+    }
+    div.welcome {
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+      img {
+        max-width: 200px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      div.links {
+        width: 400px;
+        i {
+          font-size: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      i.fa-caret-down {
+        margin-top: 100px;
+      }
+    }
+    div.info_section {
+      width: 500px;
+      h1 {
+        font-size: 24px;
+        letter-spacing: 5px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}
 @media (max-width: 500px) {
   body {
-    width: 100%;
-    .hidden-mobile {
-      display: none;
+    div {
+      font-size: 12px;
     }
-    background-color: grey;
     div.welcome {
-      margin: 0;
+      max-width: 300px;
       padding: 0;
       h1 {
         margin-top: 50px;
@@ -131,27 +166,57 @@ body {
         letter-spacing: normal;
       }
       img {
-        margin-top: 35px;
-        max-width: 250px;
       }
       div.links {
-        letter-spacing: normal;
-        a {
-          font-size: 25px;
+        width: 250px;
+        i {
+          font-size: 20px;
         }
-      }
-    }
-    div.resume {
-      div.skills {
-        width: 300px;
-        h2 {
+        p {
+          font-size: 12px;
           letter-spacing: normal;
         }
       }
     }
-    div.bio {
-      padding: 0;
-      margin-top: 10px;
+    div.info_section {
+      max-width: 300px;
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (min-width: 2560px) {
+  body {
+    div.welcome {
+      margin-top: 250px;
+      img {
+        max-width: 800px;
+      }
+      i.fa-caret-down {
+        margin-top: 200px;
+        margin-bottom: 250px;
+      }
+    }
+    div.info_section {
+      div.links {
+        margin-bottom: 125px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    div.welcome {
+      img {
+        max-width: 500px;
+      }
+      i.fa-caret-down {
+        margin-top: 175px;
+      }
     }
   }
 }
