@@ -3,23 +3,90 @@
     <head>
         <meta charset="UTF-8">
         <title>Troy Barnard</title>
+        <link rel="icon" type="image/png" href="static/img/tb_icon.png">
         <!--bootstrap-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--css-->
         <link rel="stylesheet" href="css/main.min.css"/>
-        <script src="https://use.fontawesome.com/4afb58094e.js"></script>
-        <link rel="icon" type="image/png" href="static/img/tb_icon.png">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://use.fontawesome.com/4afb58094e.js"></script>
+        <!--jQuery-->
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
-        <a href="/" class="hidden-mobile"><img src="static/img/tb_icon.png" class="logo"></a>
         <div class="welcome">
-            <h1 class="text">Troy Barnard</h1>
-            <img src="static/img/troy_flag.jpg" />
-            <div class="links row container text">
-                <div class="col-md-6 col-sm-6 col-xs-6"><a href="/resume.html">Resume</a></div>
-                <div class="col-md-6 col-sm-6 col-xs-6"><a href="/bio.html">Bio</a></div>
+          <img class="animated zoomInDown" src="static/img/troy_headshot.jpg">
+            <h1 class="text animated bounceInDown">Troy Barnard</h1>
+            <div class="container row links">
+              <div onclick="show('about')" onmouseover="shake('about_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="about_icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>About</p>
+              </div>
+              <div onclick="show('resume')" onmouseover="shake('resume_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="resume_icon">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <p>Resume</p>
+              </div>
+              <div onclick="show('contact')" onmouseover="shake('contact_icon')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contact_icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>Contact</p>
+              </div>
             </div>
+            <i onclick="show('about')" class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+        <div class="info_section" id="about_info">
+          <h1 id="about_title">About Me</h1>
+            <p>Hi I'm Troy, A recent graduate of the University of Washington Seattle's Information School.
+            As a web developer I've re-designed and managed a startup's website, developed a search engine, and participated in many other
+                projects you can find on my <a href="https://github.com/troytheboy">github</a>.</p>
+        </div>
+        <div class="info_section" id="resume_info">
+          <h1 id="resume_title">Resume</h1>
+          <div>
+              <h2>Work Experience</h2>
+              <ul>
+                  <li>Web Developer -- Deako.com -- 2016</li>
+              </ul>
+
+              <h2>Web Development</h2>
+              <h3>Front End</h3>
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS
+                      <ul>
+                          <li>SCSS, SASS</li>
+                          <li>Bootstrap</li>
+                      </ul>
+                  </li>
+                  <li>JavaScript
+                      <ul>
+                          <li>Angular JS</li>
+                          <li>jQuery</li>
+                          <li>EJS</li>
+                          <li>ui routing</li>
+                          <li>node JS</li>
+                      </ul>
+                  </li>
+              </ul>
+              <h3>Server Side</h3>
+              <ul>
+                  <li>C# (building a search engine)</li>
+                  <li>PHP</li>
+                  <li>Java</li>
+                  <li>Relational Database Management (Postrgres SQL)</li>
+                  <li>Python</li>
+                  <li>Flask</li>
+              </ul>
+          </div>
+        </div>
+        <div class="info_section" id="contact_info">
+          <h1 id="contact_title">Contact Me</h1>
+          <div class="links">
+            <a href="mailto:troy.w.barnard@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> e-mail</a>
+            <a href="https://www.linkedin.com/in/troy-barnard-7447a110b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linked in</a>
+            <a href="https://github.com/troytheboy"><i class="fa fa-github-square" aria-hidden="true"></i> github</a>
+          </div>
         </div>
     </body>
 </html>
