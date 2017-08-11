@@ -1,7 +1,6 @@
-function shake(s) {
-  $('#'+s).addClass('animated pulse');
-  setTimeout(function(){ $('#'+s).removeClass('animated pulse')}, 1000);
-  ;
+function pixar(id, animation) {
+  $('#'+id).addClass('animated'+' '+animation);
+  setTimeout(function(){ $('#'+id).removeClass('animated'+' '+animation)}, 1000);
 }
 
 function show(s) {
