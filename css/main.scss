@@ -1,76 +1,94 @@
 body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 20px;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   div {
     font-size: 24px;
+
     a {
       text-decoration: none;
-      color: black;
+      color: white;
     }
     a:hover {
-      text-decoration: none;
-      color: black;
+      text-decoration: blink;
+      color: white;
     }
   }
   img.logo {
     width: 50px;
     margin-bottom: 0;
+
+  }
+  span.title {
+    margin-left: 10px;
+    letter-spacing: 3px;
+    //padding-top: 15px;
+    height: 50px;
   }
   div.welcome {
     padding: 0 45px;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 60px;
     h1 {
       font-size: 65px;
-      color: black;
+      text-transform: lowercase;
+      overflow: hidden;
+      color: whitesmoke;
       letter-spacing: 5px;
     }
     img {
+      margin-top: 105px;
       max-width: 300px;
-      border-radius: 5px;
+      border-radius: 1px;
       filter: grayscale(100%);
     }
     div.links {
       margin-left: auto;
       margin-right: auto;
-      width: 800px;
+      width: 300px;
       margin-top: 45px;
       letter-spacing: 5px;
-      i {
-        font-size: 45px;
-      }
       a {
         text-transform: lowercase;
       }
     }
-    i.fa-caret-down {
-      font-size: 45px;
-      margin-top: 85px;
-      margin-bottom: 50px;
-      cursor: pointer;
-    }
   }
-  div.info_section {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    //display: none;
+  div.resume {
+    margin-top: -65px;
+    padding-left: 55px;
+    padding-right: 55px;
+    text-transform: lowercase;
     h1 {
+      font-size: 45px;
+      letter-spacing: 5px;
+      text-decoration: underline;
       text-align: center;
     }
-    div.links {
-      max-width: 600px;
+    hr {
+      max-width: 250px;
+      margin: 0;
+    }
+    div.skills {
+      margin-top: 65px;
+      text-align: left;
+      width: 550px;
       margin-left: auto;
       margin-right: auto;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      a {
-        margin: 10px;
+      h2 {
+        margin-top: 45px;
+        font-size: 32px;
+        letter-spacing: 5px;
+      }
+      h3 {
+        letter-spacing: 5px;
+        margin-left: 25px;
+      }
+      ul {
+        font-size: 18px;
+        margin-left: 35px;
+        ul {
+          margin: auto;
+        }
       }
     }
   }
@@ -109,56 +127,15 @@ body {
     }
   }
 }
-@media (max-width: 768px) {
-  body {
-    div {
-    font-size: 16px;
-    }
-    div.welcome {
-      max-width: 500px;
-      margin-right: auto;
-      margin-left: auto;
-      img {
-        max-width: 200px;
-      }
-      h1 {
-        font-size: 40px;
-      }
-      div.links {
-        width: 400px;
-        i {
-          font-size: 30px;
-        }
-        p {
-          font-size: 18px;
-        }
-      }
-      i.fa-caret-down {
-        margin-top: 100px;
-      }
-    }
-    div.info_section {
-      width: 500px;
-      h1 {
-        font-size: 24px;
-        letter-spacing: 5px;
-      }
-      h2 {
-        font-size: 20px;
-      }
-      h3 {
-        font-size: 18px;
-      }
-    }
-  }
-}
 @media (max-width: 500px) {
   body {
-    div {
-      font-size: 12px;
+    width: 100%;
+    .hidden-mobile {
+      display: none;
     }
+    background-color: grey;
     div.welcome {
-      max-width: 300px;
+      margin: 0;
       padding: 0;
       h1 {
         margin-top: 50px;
@@ -166,57 +143,27 @@ body {
         letter-spacing: normal;
       }
       img {
+        margin-top: 35px;
+        max-width: 250px;
       }
       div.links {
-        width: 250px;
-        i {
-          font-size: 20px;
+        letter-spacing: normal;
+        a {
+          font-size: 25px;
         }
-        p {
-          font-size: 12px;
+      }
+    }
+    div.resume {
+      div.skills {
+        width: 300px;
+        h2 {
           letter-spacing: normal;
         }
       }
     }
-    div.info_section {
-      max-width: 300px;
-      h2 {
-        font-size: 16px;
-      }
-      h3 {
-        font-size: 14px;
-      }
-    }
-  }
-}
-@media (min-width: 2560px) {
-  body {
-    div.welcome {
-      margin-top: 250px;
-      img {
-        max-width: 800px;
-      }
-      i.fa-caret-down {
-        margin-top: 200px;
-        margin-bottom: 250px;
-      }
-    }
-    div.info_section {
-      div.links {
-        margin-bottom: 125px;
-      }
-    }
-  }
-}
-@media (min-width: 1440px) {
-  body {
-    div.welcome {
-      img {
-        max-width: 500px;
-      }
-      i.fa-caret-down {
-        margin-top: 175px;
-      }
+    div.bio {
+      padding: 0;
+      margin-top: 10px;
     }
   }
 }
