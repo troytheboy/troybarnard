@@ -5,14 +5,10 @@ body {
   color: white;
   div {
     font-size: 24px;
-
-    a {
+    a, a:hover, a:visited, a:active {
       text-decoration: none;
-      color: white;
-    }
-    a:hover {
-      text-decoration: blink;
-      color: white;
+      color: black;
+      outline: none;
     }
   }
   img.logo {
@@ -51,18 +47,31 @@ body {
       a {
         text-transform: lowercase;
       }
+      div {
+        cursor: pointer;
+      }
+    }
+    i.fa-caret-down {
+      font-size: 65px;
+      margin-top: 85px;
+      margin-bottom: 50px;
+      cursor: pointer;
     }
   }
-  div.resume {
-    margin-top: -65px;
-    padding-left: 55px;
-    padding-right: 55px;
-    text-transform: lowercase;
+  div.info_section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
     h1 {
       font-size: 45px;
       letter-spacing: 5px;
       text-decoration: underline;
       text-align: center;
+      letter-spacing: 5px;
+    }
+    h3 {
+      padding-left: 18px;
     }
     hr {
       max-width: 250px;
