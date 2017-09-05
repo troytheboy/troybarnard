@@ -18,14 +18,15 @@ body {
   div.welcome {
     padding: 0 45px;
     text-align: center;
-    margin-top: 100px;
     margin-bottom: 60px;
+    background-color: whitesmoke;
     h1 {
       font-size: 65px;
       color: black;
       letter-spacing: 5px;
     }
     img {
+      margin-top: 100px;
       max-width: 300px;
       border-radius: 5px;
       filter: grayscale(100%);
@@ -58,12 +59,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
+    p {
+      font-size: 20px;
+    }
     h1 {
       text-align: center;
       letter-spacing: 5px;
     }
     h3 {
       padding-left: 18px;
+      font-style: italic;
+      color: grey;
+      margin-top: 10px;
     }
     div.links {
       max-width: 600px;
@@ -76,37 +83,86 @@ body {
         margin: 10px;
       }
     }
-  }
-  div.bio {
-    padding: 45px;
-    h1 {
-      text-align: center;
-      margin-bottom: 45px;
-      letter-spacing: 5px;
-      hr {
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
+    div.experience{
+      h3 {
+        font-style: italic;
+        color: grey;
+      }
+      p {
+        font-size: 20px;
+      }
+      div.example {
+        img {
+          max-height: 300px;
+          position: relative;
+          border: 2px solid grey;
+          border-radius: 5px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        p {
+          position: absolute;
+          top: 265px;
+          span {
+            color: white;
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
       }
     }
-    img {
-      max-width: 300px;
-      border-radius: 1px;
-      filter: grayscale(100%);
-      display: block;
-      margin: 0 auto;
+    ul {
+      list-style-type: none;
+      font-size: 20px;
+      ul {
+        font-size: 16px;
+        list-style-type: circle;
+      }
     }
-    div.bio-text {
-      margin-top: 25px;
-      text-align: left;
-      width: 350px;
-      margin-left: auto;
-      margin-right: auto;
-      text-transform: lowercase;
-      p {
-        font-size: 24px;
-        a {
-          text-decoration: underline;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+      div.info_section {
+        div.experience {
+          div.row {
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            div.example {
+              img {
+                max-height: 200px;
+              }
+              p {
+                top: 185px;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+@media (max-width: 992px) {
+  body {
+    div.info_section {
+      div.experience {
+        div.row {
+          width: 325px;
+          align-items: center;
+          text-align: center;
+          div {
+            padding: 0;
+          }
+          img {
+            text-align: center;
+            max-width: 325px;
+          }
+          p {
+            text-align: center;
+            margin-left: 122px;
+          }
         }
       }
     }
@@ -118,9 +174,6 @@ body {
     font-size: 16px;
     }
     div.welcome {
-      max-width: 500px;
-      margin-right: auto;
-      margin-left: auto;
       img {
         max-width: 200px;
       }
@@ -161,7 +214,6 @@ body {
       font-size: 12px;
     }
     div.welcome {
-      max-width: 300px;
       padding: 0;
       h1 {
         margin-top: 50px;
@@ -188,6 +240,13 @@ body {
       }
       h3 {
         font-size: 14px;
+      }
+      div.experience {
+        div.row {
+          img {
+            //width: 150px;
+          }
+        }
       }
     }
   }
