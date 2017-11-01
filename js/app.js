@@ -6,6 +6,4 @@ function pixar(id, animation) {
 function show(s) {
   $('html,body').animate({
         scrollTop: $("#"+s+'_info').offset().top},'slow');
-  $('#'+s+'_title').addClass('animated tada');
-  setTimeout(function(){ $('#'+s+'_title').removeClass('animated tada')}, 1000);
 }

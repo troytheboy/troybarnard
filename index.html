@@ -11,29 +11,20 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script src="https://use.fontawesome.com/4afb58094e.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <!--jQuery-->
         <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
     </head>
     <body>
         <div class="welcome">
-          <img class="animated zoomInDown" src="static/img/troy_headshot.JPG">
-            <h1 class="text animated bounceInDown">Troy Barnard</h1>
-            <div class="container row links">
-              <div onclick="show('about')" onmouseover="pixar('about_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="about_icon">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <p>About</p>
-              </div>
-              <div onclick="show('resume')" onmouseover="pixar('resume_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="resume_icon">
-                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                <p>Resume</p>
-              </div>
-              <div onclick="show('contact')" onmouseover="pixar('contact_icon', 'pulse')" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contact_icon">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>Contact</p>
-              </div>
+            <div class="links animated fadeInLeft">
+              <span onClick="show('about')">About</span>
+              <span onClick="show('resume')">Resume</span>
+              <span onClick="show('contact')">Contact</span>
             </div>
-            <i onclick="show('about')" class="fa fa-caret-down" aria-hidden="true"></i>
+            <h1 class="text animated fadeInDown">Troy Barnard</h1>
+            </div>
         </div>
         <div class="info_section" id="about_info">
           <h1 id="about_title">About Me</h1>
@@ -43,32 +34,45 @@
         </div>
         <div class="info_section" id="resume_info">
           <h1 id="resume_title">Resume</h1>
-          <div>
             <div class="experience">
               <h2>Work Experience</h2>
-              <h3 class="text-center">Web Developer at Deako.com, 2016</h3>
+              <h3>Web Developer at Deako.com, 2016</h3>
               <p>
                 In the summer of 2016 I interned as a Web Developer at Deako, a smart lighting startup. I was independently in charge of the entire marketing website. My workflow involved meeting with marketing over ideas for the website, receiving and realizing mockups from the design team, and overall site maintenance.
               </p>
               <p>
                 Pictured below are a few examples of my work on this project; specifically my attention to design from desktop to mobile.
               </p>
-              <div class="row">
-                <div class="example col-lg-8 col-md-7 col-sm-12 col-xs-12">
-                  <img class="example" src="static/img/deako_examples/desktop.jpg">
-                  <p><span>Desktop</span></p>
-                </div>
-                <div class="example col-lg-4 col-md-2 col-sm-12 col-xs-12">
-                  <img class="example" src="static/img/deako_examples/mobile.jpg">
-                  <p><span>Mobile</span></p>
+              <div class="container">
+                <div class="row">
+                  <div class="example col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <img class="example" src="static/img/deako_examples/desktop.jpg"/>
+                    <p class="hidden-xs"><span>Desktop</span></p>
+                  </div>
+                  <div class="example col-lg-4 col-md-2 col-sm-12 col-xs-12">
+                    <img class="example" src="static/img/deako_examples/mobile.jpg"/>
+                    <p class="hidden-xs"><span>Mobile</span></p>
+                  </div>
                 </div>
               </div>
               <p>On this project I used custom Angular JS components to create functionality such as keeping track of a newsletter, giving demos of products, and updating a beta interest list.</p>
             </div>
-            <h2>Web Development Experience</h2>
-            <p>These are few notable languages, libraries, and frameworks I've spent significant time with.</p>
-            <h3>Front End</h3>
-            <ul>
+            <div class="experience">
+              <h2>Projects</h2>
+              <h3><a href="http://www.puckscores.com">Puckscores.com</a></h3>
+              <div class="text-center">
+                <img id="puck-desktop" src="static/img/projects/puckscores.jpg" alt="puckscores.com"/>
+                <img id="puck-mobile" src="static/img/projects/puckscores-mobile.jpg" alt="puckscores.com"/>
+              </div>
+              <p>
+                To get more experience working with React I decided to make a web app that gathers National Hockey League scores into a scoreboard. This project involved a lot of work with RESTful APIs; making GET requests to gather updated score data. The app is up and running <a href="http://www.puckscores.com">here</a>.
+              </p>
+            </div>
+            <div class="experience">
+              <h2>Other Experience</h2>
+              <p>These are few notable languages, libraries, and frameworks I've spent significant time with.</p>
+              <h3>Front End</h3>
+              <ul>
                 <li>HTML</li>
                 <li>CSS
                     <ul>
@@ -97,9 +101,9 @@
         <div class="info_section" id="contact_info">
           <h1 id="contact_title">Contact Me</h1>
           <div class="links">
-            <span><a onmouseover="pixar('email', 'shake')" href="mailto:troy.w.barnard@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i> e-mail</a></span>
-            <a onmouseover="pixar('linkedin', 'shake')" href="https://www.linkedin.com/in/troy-barnard-7447a110b/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i> Linked in</a>
-            <a onmouseover="pixar('github', 'shake')" href="https://github.com/troytheboy" target="_blank"><i id="github" class="fa fa-github-square" aria-hidden="true"></i> github</a>
+            <span><a href="mailto:troy.w.barnard@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i> e-mail</a></span>
+            <a href="https://www.linkedin.com/in/troy-barnard-7447a110b/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+            <a href="https://github.com/troytheboy" target="_blank"><i id="github" class="fa fa-github-square" aria-hidden="true"></i> github</a>
           </div>
         </div>
     </body>
