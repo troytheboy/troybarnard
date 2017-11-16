@@ -1,12 +1,21 @@
-$blue: #48BEFF;
-$lightBlue: #3A506B;
-$darkBlue: #0B132B;
 $white: #FFFFFF;
 $black: #000000;
+$red: #9e1212;
+$dark-green: #042a2b;
+$green: #44ffd2;
+$blue: #5eb1bf;
+$grey: #daf5ff;
+
+// animations
+@keyframes red-shift {
+    0%   {color:$white;}
+    100% {color:$blue;}
+}
+
 body {
   font-family: 'Helvetica Neue', serif;
   font-size: 20px;
-  background: white;
+  background: $white;
   color: black;
   h1,h2,h3,h4 {
     font-family: 'Cinzel', serif;
@@ -29,14 +38,16 @@ body {
     padding: 45px;
     text-align: center;
     margin-bottom: 60px;
-    background-color: $black;
+    background-color: $dark-green;
     color: $white;
     h1 {
       font-size: 85px;
       letter-spacing: 0.5em;
-      margin-top: 45vh;
+      margin-top: 35vh;
       text-align: center;
-      border-bottom: solid 4px $white;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
     img {
       margin-top: 100px;
@@ -45,22 +56,41 @@ body {
       filter: grayscale(100%);
     }
     div.links {
-      position: absolute;
-      z-index: 3;
-      text-align: left;
+      margin-top: 145px;
+      text-align: center;
       margin-left: auto;
-      right: 25px;
+      margin-right: auto;
       letter-spacing: 5px;
       span {
         cursor: pointer;
-        display: block;
+        display: inline-block;
         margin-bottom: 50px;
       }
+      span:hover {
+        animation-name: red-shift;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+      }
     }
-    i.fa-caret-down {
+    div.contact {
+      margin-top: 45px;
+      span {
+        i {
+          width: 90px;
+          font-size: 65px;
+          color: $white;
+          margin: 10px;
+        }
+      }
+    }
+    i#down {
+      position: absolute;
+      bottom: 35px;
+      left: 0px;
+      right: 0px;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 65px;
-      margin-top: 85px;
-      margin-bottom: 50px;
       cursor: pointer;
     }
   }
@@ -68,8 +98,7 @@ body {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     p {
       font-size: 20px;
       line-height: 2em;
@@ -120,15 +149,12 @@ body {
         margin-top: 25px;
         max-width: 500px;
         margin-bottom: 15px;
-        border: solid 2px $black;
-        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
       div.example {
         img {
           max-height: 300px;
           position: relative;
-          border: 2px solid $black;
-          border-radius: 5px;
           margin-top: 15px;
           margin-bottom: 15px;
         }
@@ -151,6 +177,21 @@ body {
       ul {
         font-size: 16px;
         list-style-type: circle;
+      }
+    }
+  }
+  div.footer {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1240px) {
+  body {
+    div.welcome {
+      h1 {
+        letter-spacing: 0.25em;
+        margin-top: 75px;
+        font-size: 75px;
       }
     }
   }
@@ -178,7 +219,16 @@ body {
 }
 @media (max-width: 992px) {
   body {
+    div.welcome {
+      h1 {
+        margin-top: 55px;
+        font-size: 50px;
+      }
+    }
     div.info_section, div.container {
+      h1 {
+        font-size: 55px;
+      }
       div.experience {
         div.row {
           width: 325px;
@@ -209,11 +259,24 @@ body {
     font-size: 16px;
     }
     div.welcome {
+      min-height: 50vh;
+      h1 {
+        font-size: 45px;
+        letter-spacing: normal;
+      }
+      div.contact {
+        span {
+          i {
+            width: 60px;
+            font-size: 35px;
+          }
+        }
+      }
       img {
         max-width: 200px;
       }
       h1 {
-        font-size: 40px;
+        font-size: 50px;
       }
       div.links {
         i {
@@ -230,8 +293,8 @@ body {
     div.info_section, div.container {
       width: 500px;
       h1 {
-        font-size: 24px;
-        letter-spacing: 5px;
+        font-size: 26px;
+        letter-spacing: normal;
       }
       h2 {
         font-size: 20px;
@@ -257,7 +320,6 @@ body {
       h1 {
         margin-top: 50px;
         font-size: 35px;
-        letter-spacing: normal;
       }
       img {
       }
@@ -273,7 +335,6 @@ body {
         }
         p {
           font-size: 12px;
-          letter-spacing: normal;
         }
       }
     }

@@ -9,6 +9,7 @@
         <!--css-->
         <link rel="stylesheet" href="css/main.min.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="icon" type="image/png" href="static/img/icon/icon.jpg">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script src="https://use.fontawesome.com/4afb58094e.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
@@ -18,13 +19,13 @@
     </head>
     <body>
         <div class="welcome">
-            <div class="links animated fadeInLeft">
-              <span onClick="show('about')">About</span>
-              <span onClick="show('resume')">Resume</span>
-              <span onClick="show('contact')">Contact</span>
-            </div>
-            <h1 class="text animated fadeInDown">Troy Barnard</h1>
-            </div>
+          <h1 class="text animated fadeInDown">Troy Barnard</h1>
+          <div class="contact animated fadeInUp">
+            <span><a href="https://www.linkedin.com/in/troy-barnard/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+            <span><a href="https://github.com/troytheboy" target="_blank"><i id="github" class="fa fa-github-square" aria-hidden="true"></i></a></span>
+            <span><a href="mailto:troy.w.barnard@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i></a></span>
+          </div>
+          <i id="down" class="fa fa-angle-double-down hidden-xs" aria-hidden="true" onclick="show('about');pixar('down','fadeOutUp')"></i>
         </div>
         <div class="info_section" id="about_info">
           <h1 id="about_title">About Me</h1>
@@ -32,8 +33,8 @@
             As a web developer I've re-designed and managed a startup's website, developed a search engine, and participated in many other
                 projects you can find on my <a href="https://github.com/troytheboy" target="_blank"><u>github</u></a>.</p>
         </div>
-        <div class="info_section" id="resume_info">
-          <h1 id="resume_title">Resume</h1>
+        <div class="info_section" id="portfolio_info">
+          <h1 id="portfolio_title">Portfolio</h1>
             <div class="experience">
               <h2>Work Experience</h2>
               <h3>Web Developer at Deako.com, 2016</h3>
@@ -47,11 +48,9 @@
                 <div class="row">
                   <div class="example col-lg-8 col-md-7 col-sm-12 col-xs-12">
                     <img class="example" src="static/img/deako_examples/desktop.jpg"/>
-                    <p class="hidden-xs"><span>Desktop</span></p>
                   </div>
                   <div class="example col-lg-4 col-md-2 col-sm-12 col-xs-12">
                     <img class="example" src="static/img/deako_examples/mobile.jpg"/>
-                    <p class="hidden-xs"><span>Mobile</span></p>
                   </div>
                 </div>
               </div>
@@ -98,13 +97,6 @@
               </ul>
           </div>
         </div>
-        <div class="info_section" id="contact_info">
-          <h1 id="contact_title">Contact Me</h1>
-          <div class="links">
-            <span><a href="mailto:troy.w.barnard@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i> e-mail</a></span>
-            <a href="https://www.linkedin.com/in/troy-barnard-7447a110b/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
-            <a href="https://github.com/troytheboy" target="_blank"><i id="github" class="fa fa-github-square" aria-hidden="true"></i> github</a>
-          </div>
-        </div>
+        <div class="footer">&#169; 2017</div>
     </body>
 </html>
