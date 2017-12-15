@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css?family=Barlow|Bungee');
+
 $white: #FFFFFF;
 $black: #000000;
 $red: #9e1212;
@@ -14,12 +16,12 @@ $purple: #2A0D45;
 }
 
 body {
-  font-family: 'Helvetica Neue', serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 20px;
   background: $white;
   color: black;
   h1,h2,h3,h4 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Bungee', cursive;
   }
   div {
     font-size: 24px;
@@ -34,7 +36,6 @@ body {
     margin-bottom: 0;
   }
   div.welcome {
-    font-family: 'Cinzel', serif;
     min-height: 100vh;
     padding: 45px;
     text-align: center;
@@ -44,7 +45,7 @@ body {
     h1 {
       font-size: 85px;
       letter-spacing: 0.5em;
-      margin-top: 35vh;
+      margin-top: 25vh;
       text-align: center;
       max-width: 1200px;
       margin-left: auto;
