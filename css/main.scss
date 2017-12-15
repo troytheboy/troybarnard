@@ -5,6 +5,7 @@ $dark-green: #042a2b;
 $green: #44ffd2;
 $blue: #5eb1bf;
 $grey: #daf5ff;
+$purple: #2A0D45;
 
 // animations
 @keyframes red-shift {
@@ -38,7 +39,7 @@ body {
     padding: 45px;
     text-align: center;
     margin-bottom: 60px;
-    background-color: $dark-green;
+    background-color: $purple;
     color: $white;
     h1 {
       font-size: 85px;
