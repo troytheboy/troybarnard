@@ -134,6 +134,9 @@ body {
     }
     div.experience{
       margin-top: 50px;
+      div.project-break {
+        font-size: 75px;
+      }
       h3 {
         font-style: italic;
         color: grey;
@@ -159,6 +162,9 @@ body {
         width: 250px;
         margin-bottom: 15px;
         box-shadow: none;
+      }
+      img.screenshot {
+        width: 100%;
       }
       div.example {
         img {
@@ -351,7 +357,7 @@ body {
       max-width: 300px;
       div.experience {
         div.row {
-        width: 200px;
+          width: 200px;
           div.example {
             max-width: 250px;
             img.example {
@@ -367,6 +373,9 @@ body {
           width: 250px;
           margin-left: auto;
           margin-right: auto;
+        }
+        img {
+          max-width: 60vw;
         }
       }
     }
