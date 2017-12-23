@@ -1,0 +1,23 @@
+{
+  "name": "troybarnard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon *js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troytheboy/troybarnard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troytheboy/troybarnard/issues"
+  },
+  "homepage": "https://github.com/troytheboy/troybarnard#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  }
+}
