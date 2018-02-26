@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Barlow|Bungee');
+ //@import url('https://fonts.googleapis.com/css?family=Barlow|Bungee');
 
 $white: #FFFFFF;
 $black: #000000;
@@ -21,7 +21,7 @@ body {
   background: $white;
   color: black;
   h1,h2,h3,h4 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', sans-serif;
   }
   div {
     font-size: 24px;
