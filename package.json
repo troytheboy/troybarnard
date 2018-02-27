@@ -23,5 +23,7 @@
     "gulp-ruby-sass": "^3.0.0",
     "nodemon": "^1.14.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-git": "^2.5.2"
+  }
 }
