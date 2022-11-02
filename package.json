@@ -19,7 +19,7 @@
   "homepage": "https://github.com/troytheboy/troybarnard#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-ruby-sass": "^3.0.0",
     "nodemon": "^1.14.3"
   },
